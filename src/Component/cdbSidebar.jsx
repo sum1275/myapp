@@ -1,48 +1,36 @@
+import React from 'react';
+import {
+  CDBSidebar,
+  CDBSidebarContent,
+  CDBSidebarHeader,
+  CDBSidebarMenu,
+  CDBSidebarMenuItem,
+  CDBSidebarFooter,
+} from 'cdbreact';
+import "./CDBsidebar.css";
 
-import React from 'react' ;
-import {CDBSidebar, CDBSidebarContent, CDBSidebarHeader, CDBSidebarFooter, CDBSidebarMenu, CDBSidebarMenuItem} from 'cdbreact'; 
-import {NavLink, Link} from 'react-router-dom';
-import {} from 'react-router-dom';
-/*const cdbSidebar=()=>*/
-function CDBsidebar(){
-    return (
-        <div style={{display:'flex', height:'100%', overflow:'scroll initial'}}>
-            <CDBSidebar textColer="#fff" backgroundColor="rgb(37, 90, 122)">
-                <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-                    <Link to="/dashboard">Dashboard</Link>
-                </CDBSidebarHeader>
-                <CDBSidebarContent className="sidebar-content">
-                    <CDBSidebarMenu>
-                        <NavLink exact to="/dashboard" activeClassName="activeClicked">
-                            <CDBSidebarMenuItem icon="columns">
-                                Transfer
-                            </CDBSidebarMenuItem>
-                        </NavLink>
-                        <NavLink exact to="/dashboard" activeClassName="activeClicked">
-                            <CDBSidebarMenuItem icon="columns">
-                                Transfer
-                            </CDBSidebarMenuItem>
-                        </NavLink>
-                        <NavLink exact to="/dashboard" activeClassName="activeClicked">
-                            <CDBSidebarMenuItem icon="columns">
-                                Transfer
-                            </CDBSidebarMenuItem>
-                        </NavLink>
-                        <NavLink exact to="/dashboard" activeClassName="activeClicked">
-                             <CDBSidebarMenuItem icon="columns">
-                                Transfer
-                            </CDBSidebarMenuItem>
-                        </NavLink>
-                    </CDBSidebarMenu>
-                </CDBSidebarContent>
-                <CDBSidebarFooter style={{textAlign:'center'}}>
-                    <div className="sidebar-btn-wrapper" style={{ padding :'20px 5px' }}>
-                        sidebar footer
-                    </div>
-                </CDBSidebarFooter>
-            </CDBSidebar>
-        </div>
-    )
-}
+export const CDBsidebar = () => {
+  return (
+      <CDBSidebar className="side-bar-full">
+        <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>MissCallPay</CDBSidebarHeader>
+        <CDBSidebarContent>
+          <CDBSidebarMenu>
+            <CDBSidebarMenuItem>
+                <div>
+                <a href="#" className="brand-link">
+                <img src="dist/img/Minkville_logo.png"  className="brand-image" 
+                 />
+                <span classname="brand-text " >Minkville</span>
+                 </a>
+                </div> 
+                </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="fas fa-tachometer-alt">Clients</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="fas fa-tachometer-alt">Users</CDBSidebarMenuItem>
+            
+          </CDBSidebarMenu>
+        </CDBSidebarContent>
 
-export default CDBsidebar;
+       
+      </CDBSidebar>
+  );
+};
