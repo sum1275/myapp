@@ -4,7 +4,7 @@ import {CDBSidebar, CDBSidebarContent, CDBSidebarHeader, CDBSidebarFooter, CDBSi
 import {NavLink, Link} from 'react-router-dom';
 import {} from 'react-router-dom';
 /*const cdbSidebar=()=>*/
-function cdbSidebar(){
+function CDBsidebar(){
     return (
         <div style={{display:'flex', height:'100%', overflow:'scroll initial'}}>
             <CDBSidebar textColer="#fff" backgroundColor="rgb(37, 90, 122)">
@@ -45,4 +45,4 @@ function cdbSidebar(){
     )
 }
 
-export default cdbSidebar;
+export default CDBsidebar;

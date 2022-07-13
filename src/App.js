@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 //import BasicExample from './Component/Sidebar.js'
 //import Dashboard from './Component/Dashboard.jsx';
-import cdbSidebar from './Component/cdbSidebar'
+import CDBsidebar from './Component/CDBsidebar'
 function App() {
   return (
     <div className="App">
-   <cdbSidebar />
+   <CDBsidebar />
     </div>
   );
 }
