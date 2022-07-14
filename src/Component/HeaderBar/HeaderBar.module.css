@@ -1,0 +1,10 @@
+.header-bar {
+ color: red;
+ background-color: aqua;
+  width: 100vw;
+  padding: 0.9rem;
+  flex-direction: column;
+}
+.headshot{
+  background-color: blue;
+}
