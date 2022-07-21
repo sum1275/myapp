@@ -18,7 +18,7 @@ function App() {
           <div className="maincontent">
             <Routes>
               <Route element={<ClientBody />} path="/" />
-              <Route element={<UserBody />} path="/users" />
+              <Route element={<UserBody />} path="users" />
             </Routes>
           </div>
         </div>

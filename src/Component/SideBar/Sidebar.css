@@ -1,0 +1,27 @@
+.side-bar-full {
+  height: 100vh;
+}
+.brand-image {
+  width: 200px;
+  height: 61px;
+}
+.brand-text {
+  color: #343a40;
+}
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.avatar-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.sidebar-menu-item:hover{
+background-color: #272b33;
+}
+.active{
+  background-color: blue !important;
+  color: white !important;
+}
