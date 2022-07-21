@@ -19,8 +19,8 @@ export function SideBar() {
       </CDBSidebarHeader>
       <CDBSidebarContent>
         <CDBSidebarMenu>
-          <CDBSidebarMenuItem icon="fas fa-tachometer-alt">
-            <Link to={"/"}>Client</Link>
+          <CDBSidebarMenuItem icon="fas fa-tachometer-alt" className="sidebar-menu-item" >
+            <Link to={"/"} >Client</Link>
           </CDBSidebarMenuItem>
           <CDBSidebarMenuItem icon="fas fa-tachometer-alt">
             <Link to={"/users"}>users</Link>

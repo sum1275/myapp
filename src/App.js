@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <SideBar />
-        <div className="content">
+        <div className="content container-fluid">
           <HeaderBar />
           <div className="maincontent">
             <Routes>
