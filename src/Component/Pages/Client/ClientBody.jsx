@@ -13,9 +13,7 @@ function ClientBody() {
                 <div className="card-header">
                   <div className="custom-card-header">
                     <div className="custom-card-header-button">
-                      
-                        {<AddClientForm />}
-                      
+                      {<AddClientForm />}
                     </div>
                   </div>
                 </div>
