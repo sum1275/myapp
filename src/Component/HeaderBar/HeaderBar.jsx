@@ -1,11 +1,13 @@
 import React from "react";
-import './HeaderBar.module.css';
+import './HeaderBar.css';
+import Button from 'react-bootstrap/Button';
 
 export default function HeaderBar() {
   return (
     <div className="header-bar">
-
-     <h1 className="headshot">MissCallPay Headerbar Component sahab</h1> 
+<div className="logout-button">
+<Button variant="danger" >Logout</Button>{' '} 
+</div>
     </div>
   );
 }

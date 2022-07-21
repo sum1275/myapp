@@ -3,8 +3,8 @@ import './App.css';
 //import BasicExample from './Component/Sidebar.js'
 //import Dashboard from './Component/Dashboard.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Client from './Component/Pages/Client/Client'
-import Users from './Component/Pages/Users/Users'
+import ClientBody from './Component/Pages/Client/ClientBody'
+import UserBody from './Component/Pages/Users/UserBody'
 import HeaderBar from './Component/HeaderBar/HeaderBar';
 import {SideBar} from './Component/SideBar/Sidebar'
 
@@ -17,8 +17,8 @@ function App() {
           <HeaderBar />
           <div className="maincontent">
             <Routes>
-              <Route element={<Client />} path="/" />
-              <Route element={<Users />} path="/users" />
+              <Route element={<ClientBody />} path="/" />
+              <Route element={<UserBody />} path="/users" />
             </Routes>
           </div>
         </div>

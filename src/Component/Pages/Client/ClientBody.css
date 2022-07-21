@@ -1,0 +1,27 @@
+.client-body {
+  padding: 3rem;
+}
+.custom-card-header {
+  display: flex;
+  padding: 0.5rem;
+}
+.custom-card-header-button,
+.custom-button {
+  padding: 0.2rem;
+}
+.custom-card-body-search,
+.custom-label {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: row-reverse;
+}
+.custom-button-container {
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: row;
+}
+.custom-Pagination {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,27 @@
+
+.card-body {
+  margin: 0.1rem;
+}
+.card-text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.card-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.1rem;
+  /*border: 1px solid black;*/
+  padding: 0.08rem;
+}
+.card-column {
+  width: 50%;
+ /* border: 1px solid red;*/
+}
+.form-content {
+  display: flex;
+  flex-direction: row;
+}
+.form-content-section {
+  width: 50%;
+ /* border: 1px solid blue;*/
+}
