@@ -1,7 +1,7 @@
 .header-bar {
  color: #f8f4f4;
  background-color:#f8f4f4;
-  width: 95vw;
+  width: auto;
   padding: 0.5rem;
   flex-direction: column;
 }
