@@ -8,7 +8,6 @@ import {
 } from "cdbreact";
 import { Link, NavLink } from "react-router-dom";
 import "./Sidebar.css";
-import Avatar from "react-avatar";
 
 /*export const SideBar = () => */ export function SideBar() {
   let activeClassName = "sidebar-menu-item active-link";
@@ -29,24 +28,28 @@ import Avatar from "react-avatar";
             </div>
           </CDBSidebarMenuItem>
           <hr />
-          <CDBSidebarMenuItem
-            icon="fas fa-tachometer-alt"
-            className={({ isActive }) =>
-              isActive ? activeClassName : "sidebar-menu-item"
-            }
-          >
-            <Link to={"/"}>Client</Link>
-          </CDBSidebarMenuItem>
+          <NavLink to={"/"}>
+            <CDBSidebarMenuItem
+              icon="fas fa-tachometer-alt"
+              className="sidebar-menu-item"
+              style={({ isActive }) =>
+                isActive ? { backgroundColor: "#fff" } : {}
+              }
+            >
+              <span>Client</span>
+            </CDBSidebarMenuItem>
+          </NavLink>
+
           <NavLink to={"/users"}>
-          <CDBSidebarMenuItem
-            icon="fas fa-tachometer-alt"
-            className="sidebar-menu-item"
-            style={({ isActive }) =>
-              isActive ? {"backgroundColor":"#fff"} : {}
-            }
-          >
-            <span >users</span>
-          </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem
+              icon="fas fa-tachometer-alt"
+              className="sidebar-menu-item"
+              style={({ isActive }) =>
+                isActive ? { backgroundColor: "#fff" } : {}
+              }
+            >
+              <span>Users</span>
+            </CDBSidebarMenuItem>
           </NavLink>
         </CDBSidebarMenu>
       </CDBSidebarContent>

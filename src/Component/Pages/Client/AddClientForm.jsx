@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import Table from "react-bootstrap/Table";
 import "./AddClientForm.css";
 
 function AddClientForm() {
@@ -195,17 +196,19 @@ function AddClientForm() {
                           </Form.Label>
                         </div>
                         <div className="form-content-section">
-                          <iframe>
-                            <Form.Select
-                              aria-label="Default select example"
-                              style={{ width: "100%" }}
-                            >
-                              <option>--Select DID--</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </Form.Select>
-                          </iframe>
+                          <Table>
+                            <tbody>
+                              <Form.Select
+                                aria-label="Default select example"
+                                style={{ width: "100%" }}
+                              >
+                                <option>--Select DID--</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </Form.Select>
+                            </tbody>
+                          </Table>
                         </div>
                       </div>
                     </Form.Group>

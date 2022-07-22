@@ -18,10 +18,10 @@
   gap: 10px;
   align-items: center;
 }
-.sidebar-menu-item:hover{
-background-color: #272b33;
+.sidebar-menu-item:hover {
+  background-color: #272b33;
 }
-.active{
+.active {
   background-color: blue !important;
   color: white !important;
 }
