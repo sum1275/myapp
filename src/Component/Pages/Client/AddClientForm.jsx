@@ -195,20 +195,17 @@ function AddClientForm() {
                             Escalation DIDs :
                           </Form.Label>
                         </div>
-                        <div className="form-content-section">
-                          <Table>
-                            <tbody>
-                              <Form.Select
-                                aria-label="Default select example"
-                                style={{ width: "100%" }}
-                              >
-                                <option>--Select DID--</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </Form.Select>
-                            </tbody>
-                          </Table>
+                        <div className="form-content-section overflow-auto ">
+                          <Form.Select
+                            aria-label="Default select example"
+                            style={{ width: "100%"}}
+                           multiple
+                          >
+                            <option>--Select DID--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </Form.Select>
                         </div>
                       </div>
                     </Form.Group>
