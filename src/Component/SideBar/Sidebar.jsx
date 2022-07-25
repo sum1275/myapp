@@ -28,7 +28,7 @@ import "./Sidebar.css";
             </div>
           </CDBSidebarMenuItem>
           <hr />
-          <NavLink to={"/"}>
+          <NavLink to={"/"}  >
             <CDBSidebarMenuItem
               icon="fas fa-tachometer-alt"
               className="sidebar-menu-item"
@@ -36,7 +36,7 @@ import "./Sidebar.css";
                 isActive ? { backgroundColor: "#fff" } : {}
               }
             >
-              <span>Client</span>
+              <span   activeClassName="selected">Client</span>
             </CDBSidebarMenuItem>
           </NavLink>
 
