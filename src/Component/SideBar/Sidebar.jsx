@@ -28,28 +28,34 @@ import "./Sidebar.css";
             </div>
           </CDBSidebarMenuItem>
           <hr />
-          <NavLink to={"/"}  >
-            <CDBSidebarMenuItem
-              icon="fas fa-tachometer-alt"
-              className="sidebar-menu-item"
-              style={({ isActive }) =>
-                isActive ? { backgroundColor: "#fff" } : {}
-              }
-            >
-              <span   activeClassName="selected">Client</span>
-            </CDBSidebarMenuItem>
+          <NavLink to={"/"} end>
+            {(ref) => (
+              <CDBSidebarMenuItem
+                icon="fas fa-tachometer-alt"
+                className="sidebar-menu-item"
+                active={ref.isActive}
+                style={({ isActive }) =>
+                  isActive ? { backgroundColor: "#fff" } : {}
+                }
+              >
+                <span activeClassName="selected">Client</span>
+              </CDBSidebarMenuItem>
+            )}
           </NavLink>
 
-          <NavLink to={"/users"}>
-            <CDBSidebarMenuItem
-              icon="fas fa-tachometer-alt"
-              className="sidebar-menu-item"
-              style={({ isActive }) =>
-                isActive ? { backgroundColor: "#fff" } : {}
-              }
-            >
-              <span>Users</span>
-            </CDBSidebarMenuItem>
+          <NavLink to={"/users"} end>
+            {(ref) => (
+              <CDBSidebarMenuItem
+                icon="fas fa-tachometer-alt"
+                className="sidebar-menu-item"
+                active={ref.isActive}
+                style={({ isActive }) =>
+                  isActive ? { backgroundColor: "#fff" } : {}
+                }
+              >
+                <span activeClassName="selected">Users</span>
+              </CDBSidebarMenuItem>
+            )}
           </NavLink>
         </CDBSidebarMenu>
       </CDBSidebarContent>
